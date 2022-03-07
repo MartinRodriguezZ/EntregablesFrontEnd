@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make UR Cake!</title>
+</head>
+<style>
+    .lista {
+        font-size: 20px;
+    }
+
+    body {
+        color: whitesmoke;
+        background-color: black;
+    }
+
+    .subtitulo {
+        font-style: italic;
+    }
+</style>
+
+<body>
+    <div style="display: flex; justify-content: center; background-color: black;">
+
+        <img src="./assets/logo.png" alt="logo">
+    </div>
+</body>
+<div>
+    <h2 class="subtitulo">SABORES</h2>
+    <dl class="lista">
+        <dd>Vainilla......$200</dd>
+        <dd>Chocolate......$250</dd>
+        <dd>Tres Leches....$300</dd>
+        <dd>Limón........$200</dd>
+        <dd>Elote........$300</dd>
+    </dl>
+    <hr>
+    <h2 class="subtitulo">ADORNOS</h2>
+    <ul class="lista">
+        <li>Frutas y Frutos Secos
+            <ul>
+                <li>Nueces</li>
+                <li>Fresas</li>
+                <li>Duraznos</li>
+                <li>Kiwis</li>
+                <li>Cerezas</li>
+                <li>Zarzamora</li>
+            </ul>
+        </li>
+        <li>Galletas
+            <ul>
+                <li>Oreo</li>
+                <li>Ferrero Rocher</li>
+                <li>Huevo Kinder</li>
+                <li>Wafer Kalu</li>
+                <li>Kinder Delice</li>
+                <li>Barra Hersheys</li>
+                <li>m&m's</li>
+            </ul>
+        </li>
+        <li>Cobertura
+            <ul>
+                <li>Betun (Color al gusto)</li>
+                <li>Chispas arcoiris</li>
+                <li>Chispas Chocolate</li>
+                <li>Chocolate liquido</li>
+                <li>Chocolate Blanco liquido</li>
+                <li>Perlas</li>
+            </ul>
+        </li>
+    </ul>
+    <fieldset>
+        <legend>
+            <h2 class="subtitulo">Ingresa tu pedido</h2>
+        </legend>
+        <form action="pedidos.html" method="post">
+            <ul>
+                <li>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="user_name">
+                </li>
+                <li>
+                    <label for="tel">Telefono:</label>
+                    <input type="tel" id="tel" name="user_tel">
+                </li>
+                <li>
+                    <label for="mail">Correo electrónico:</label>
+                    <input type="email" id="mail" name="user_mail">
+                </li>
+            </ul>
+            <ul>
+                <h2 class="subtitulo">Descripción General del Pastel</h2>
+                <li>
+                    <label for="sabores">Elige el sabor:</label>
+
+                    <select name="sabores" id="sabores">
+                        <option value="Vainilla">Vainilla</option>
+                        <option value="Chocolate">Chocolate</option>
+                        <option value="Tres Leches">Tres Leches</option>
+                        <option value="audi">Limón</option>
+                        <option value="Elote">Elote</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="sabor_combinado">Conbinar Sabores:</label>
+                    <select name="sabor_combinado" id="sabor_combinado">
+                        <option selected="selected" value="Ninguno">Ninguno</option>
+                        <option value="Vainilla">Vainilla</option>
+                        <option value="Chocolate">Chocolate</option>
+                        <option value="Tres Leches">Tres Leches</option>
+                        <option value="audi">Limón</option>
+                        <option value="Elote">Elote</option>
+                    </select>
+                </li>
+                <br>
+                <a href="./pedidos.html">
+                    <input type="submit"/>
+                </a>
+            </ul>
+        </form>
+    </fieldset>
+</div>
+
+</html>
