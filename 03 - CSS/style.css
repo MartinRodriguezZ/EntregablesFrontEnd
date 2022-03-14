@@ -1,0 +1,38 @@
+.nav {
+    background: rgba(131, 125, 125, 0.384);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+body{
+    font-size: 15px;
+    font-family: 'Krub';
+    font-weight: 900;
+    width: 100%;
+}
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: black;
+}
+
+.button {
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    display: inline-block;
+    padding: 14px 40px
+}
+
+.seccion {
+    border-radius: 2%;
+    box-shadow: 0 8px 6px -6px black;
+    background-color: white;
+}
+
+.textoSeccion {
+    color: gray;
+}
